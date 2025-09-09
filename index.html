@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>BallAlyze</title>
+</head>
+<body>
+    <div class="main-container">
+        <!-- Header Section -->
+        <header>
+            <!-- logo -->
+            <a href="#"><img id="logo" src="images/logo.png" alt="page logo"></a>
+            <!-- Small Container for H1 and P tags "About the page" -->
+            <div class="ballalyze" aria-labelledby="hero-title">
+                <h1 id="hero-title">BallAlyze</h1>
+                <p>Provides data-driven insights to identify the most promising players</p>
+
+            </div>
+            <!-- Main Navigation Bar "Links" -->
+            <nav class="nav-bar" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#cards">Cards</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Section -->
+        <main>
+            <!-- Cards section to present most rated player ,, still random for now  -->
+            <section aria-label="Players Card Section">
+                <div id="cards" class="cards-container">
+                    <!-- player card must be changed by itself , it has to be a varuable not hard coded , also insted of -->
+                    <!-- typing player card + number it should be player name aswell the IDs must be dynamics but we'r not 
+                    in JS , Php or Python yet -->
+                    <div class="player-card" aria-labelledby="player-card-1"> 
+                        <a href="#" target="_blank">
+                        <div class="player-info">
+                            <h4 id="player-card-1">Lamine Yamal</h4>
+                            <!-- alt="var ..etc " means that it should'nt be hard coded -->
+                            <img class="player-pic" src="images/lamine.jpg" alt="var - Player Name Photo">
+                            <p>Barcelona</p>
+                            <p>18 Years old</p>
+                            <p>Right Winger</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="player-card" aria-labelledby="player-card-2">
+                        <a href="#">
+                        <div class="player-info">
+                            <h4 id="player-card-2">Mbappe</h4>
+                            <img class="player-pic" src="images/mbsppe.jpg" alt="var - Player Name Photo">
+                            <p>Real Madrid</p>
+                            <p>26 Years old</p>
+                            <p>Left Winger</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="player-card" aria-labelledby="player-card-3">
+                        <a href="#">
+                        <div class="player-info">
+                            <h4 id="player-card-3">Haaland</h4>
+                            <img class="player-pic" src="images/halaand.jpg" alt="var - Player Name Photo">
+                            <p>Man City</p>
+                            <p>25 Years old</p>
+                            <p>Striker</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="player-card" aria-labelledby="player-card-4">
+                        <a href="#">
+                        <div class="player-info">
+                            <h4 id="player-card-4">Taty Castellanos</h4>
+                            <img class="player-pic" src="images/taty.jpg" alt="var - Player Name Photo">
+                            <p>Lazio</p>
+                            <p>26 Years old</p>
+                            <p>Striker</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="player-card" aria-labelledby="player-card-5">
+                        <a href="#">
+                        <div class="player-info">
+                            <h4 id="player-card-5">Ritsu Doan</h4>
+                            <img class="player-pic" src="images/doan.jpg" alt="var - Player Name Photo">
+                            <p>Frankfurt</p>
+                            <p>27 Years old</p>
+                            <p>Right Winger</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="player-card" aria-labelledby="player-card-6">
+                        <a href="#">
+                        <div class="player-info">
+                            <h4 id="player-card-6">Harry Kane</h4>
+                            <img class="player-pic" src="images/kean.jpg" alt="var - Player Name Photo">
+                            <p> Bayern Munich</p>
+                            <p>32 Years old</p>
+                            <p>Striker</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Side Bar with statistics , players overpreforming -->
+        <aside aria-label="Players Statistics .">
+            <h3 id="side-title">PLAYERS STATISTICS</h3>
+            <div class="stats-wraper">
+                <div class="side-stats">
+                    <p class="player-name">Serhou Guirassy</p>
+                    <img src="images/Guirassy.jpg" alt="a pictuer that shows player named Guirassy">
+                    <p>Borussia Dortmund</p>
+                    <p> 29 years old Forward</p>
+                    <p><span>1.67</span> expected goals per 90</p>
+                </div>
+                <div class="side-stats">
+                    <p class="player-name">Mats Wieffer</p>
+                    <img src="images/Wieffer.jpg" alt="a pictuer that shows player named Wiefer">
+                    <p>Brighton & Hove Albion</p>
+                    <p> 25 Defensives Midlfelder</p>
+                    <p><span>3.42</span> Tackles per 90</p>
+                    <p><span>2.21</span> Clearance per 90</p>
+                </div>
+                <div class="side-stats">
+                    <p class="player-name">Nicolo Rovella</p>
+                    <img src="images/Rovella.jpg" alt="a pictuer that shows player named Rovella">
+                    <p>Lazio</p>
+                    <p> 23 Defensives Midfelder</p>
+                    <p><span>4.5</span> Key Passes per 90</p>
+                    <p><span>90.8%</span> Passing Accuracy per 90</p>
+                </div>
+            </div>
+
+        </aside>
+        <!-- Contact Form -->
+        <div id="contact" class="contact-container">
+            <h3>Contact Us</h3>
+            <div>
+                <form class="contact-form" action="#" target="_top" method="post" autocomplete="off">
+                    <label for="fname">First Name</label>
+                    <input class="input" type="text" id="fname" name="first_name">
+                    <label for="lname">Last Name</label>
+                    <input class="input" type="text" id="lname" name="last_name">
+                    <label for="email">Email</label>
+                    <input class="input" type="email" id="email" name="mail">
+                    <textarea name="msg" id="text-area" placeholder="Type Here .."></textarea>
+                    <input type="submit" class="submit" id="submit" value="SEND">
+
+                </form>
+            </div>
+            
+        </div>
+            
+        <div class="copyright">
+            <p>&copy; 2025 Ballalyze. All Rights Reserved.</p>
+        </div>
+        <footer>
+            <!-- Footer Icons+ links -->
+            <a href="http://github.com/tarik-box" target="_blank"><img src="https://img.icons8.com/nolan/64/github.png" alt="github"></a>
+            <a href="http://linkedin.com/in/tarik-ataia-a0763a383" target="_blank"><img src="https://img.icons8.com/nolan/64/linkedin.png" alt="linkedin"></a>
+            <a href="https://x.com/AtaiaTarik" target="_blank"><img src="https://img.icons8.com/nolan/64/twitterx.png" alt="twitterx"></a>
+            <a href="https://www.facebook.com/profile.php?id=61580464472525" target="_blank"><img src="https://img.icons8.com/nolan/64/facebook.png" alt="facebook"></a>
+            <a href="https://www.youtube.com/@AllAlyze" target="_blank"><img src="https://img.icons8.com/nolan/64/youtube-play.png" alt="youtube-play"></a>           
+        </footer>
+    </div>
+</body>
+</html>
