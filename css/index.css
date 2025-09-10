@@ -34,7 +34,7 @@ body{
 }
 header,main,aside,footer,.copyright,.contact-container{
     /* border: 1px solid #fff; */
-    border-radius: 50px;
+    border-radius: 3rem;
 
 }
 
@@ -46,32 +46,27 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 5px 5px 15px 0 #000000bf;
-    border-radius: 50px;
+    box-shadow: -2px 1px 0 0 #b700ff73;
 }
 /* Logo  Image  */
 #logo{
-    height: 8rem;
+    height: 10rem;
 }
 /* Heading -- H1 Element */
 .ballalyze{
+    padding: 1rem;
     text-align: center;
     align-self: flex-end;
 }
 .ballalyze h1{
-    font-size: 2.5rem;
-    padding-bottom: 0.2rem;
+    font-size: 3rem;
     /* Heading animating */
     animation: typing 2s steps(25) normal;
     /* animation-iteration-count: infinite; */ /*Uncomment to make the heading animate all the time*/
     white-space: nowrap;
     overflow: hidden;
 }
-.ballalyze p{
-    padding: 0.8rem;
-    text-decoration: underline;
-    font-style: italic;
-}
+
 /* Main Navbar */
 .nav-bar ul{
     display: flex;
@@ -98,12 +93,12 @@ a{
 /* Main Section */
 main{
     grid-area: main;
-    box-shadow: 2px 2px 5px 0 #000000bf;
+    box-shadow: -1px 1px 4px 0 #000000bf;
 }
 .cards-container{
-    padding: 2em;
+    padding: 5em;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     row-gap: 1em;
 }
 .player-card{
