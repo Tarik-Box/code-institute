@@ -1,7 +1,7 @@
 /* importing out fav Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:wght@400;500;700&display=swap');
 
-/* Starts of General Settings
+/* Starts of global Settings
 ---------------------------- */
 
 /*Reset Everythings*/
@@ -13,11 +13,10 @@
 /*Setting up the body defualts*/
 body{
     height: 100%;
-    font-size: 600;
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Mono', monospace;
     color: #fff;
-background-image: linear-gradient(to left top, #430049, #4d0363, #39025d, #240256, #06004e);
+    background-image: linear-gradient(to left top, #430049, #4d0363, #39025d, #240256, #06004e);
 }
 
 /* Header Section */
@@ -27,7 +26,7 @@ background-image: linear-gradient(to left top, #430049, #4d0363, #39025d, #24025
     grid-template-areas: 
     "header header header"
     "main main side"
-    "contact contact side"
+    "contact contact contact"
     "copyright social social "
     ;
     row-gap: 5em;
@@ -39,19 +38,20 @@ header,main,aside,footer,.copyright,.contact-container{
 
 }
 
-/* End of General settings  */
+/* End of global settings  */
 
 header{
-    height: 8em;
+    height: 8rem;
     grid-area: header;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     box-shadow: 5px 5px 15px 0 #000000bf;
     border-radius: 50px;
 }
 /* Logo  Image  */
 #logo{
-    height: 8em;
+    height: 8rem;
 }
 /* Heading -- H1 Element */
 .ballalyze{
@@ -59,49 +59,46 @@ header{
     align-self: flex-end;
 }
 .ballalyze h1{
-    font-size: 2.5em;
-    padding-bottom: 0.2em;
-    /* Heading animation */
-    animation: typing 5s steps(50) normal;
-    /* animation-iteration-count: infinite; */
-    /* white-space: nowrap; */
+    font-size: 2.5rem;
+    padding-bottom: 0.2rem;
+    /* Heading animating */
+    animation: typing 2s steps(25) normal;
+    /* animation-iteration-count: infinite; */ /*Uncomment to make the heading animate all the time*/
+    white-space: nowrap;
     overflow: hidden;
 }
 .ballalyze p{
-    padding: 0.8em;
+    padding: 0.8rem;
     text-decoration: underline;
     font-style: italic;
 }
 /* Main Navbar */
-.nav-bar{
-    display: flex;
-    align-items: center;
-}
 .nav-bar ul{
     display: flex;
     list-style: none;
 }
 .nav-bar ul li{
     /* text-transform: uppercase; */
-    margin-right: 1em;
+    text-indent: 1.5rem;
 }
 /* Links */
 /* every link on the page will be by defualt :*/
 a{
     text-decoration: none;
     color: #fff;
-    font-size: 1em;
+    font-size: 1.2rem;
     letter-spacing: 2px;
 }
 .nav-bar a:hover{
-    text-shadow: 0 1px  #fafafa;
+    text-shadow: 0 1px 3px #fafafa;
 }
+/* -------------------------------------------- */
+
 /* -------------------------------------------- */
 /* Main Section */
 main{
     grid-area: main;
-    /* background-color: #00285C; */
-    box-shadow: 5px 5px 15px 0 #000000bf;
+    box-shadow: 2px 2px 5px 0 #000000bf;
 }
 .cards-container{
     padding: 2em;
