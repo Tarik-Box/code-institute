@@ -1,6 +1,6 @@
 #Ballalyze
 
-## Ballalyze - Code Institute Project 1 Submission
+## Ballalyze
 
 BallAlyze is a simple idea and part of what would be a big Project , to analyse football players based on thier prefomance and in game data.
 
