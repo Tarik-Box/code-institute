@@ -1,4 +1,4 @@
-
+ÿþ
 # Ballalyze âš½ðŸ“Š
 
 Ballalyze is a simple football data analytics demo project built with **HTML** and **CSS**.
