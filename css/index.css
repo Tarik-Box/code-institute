@@ -223,8 +223,9 @@ aside h3{
     display: grid;
     grid-template-areas:
     "image statmap"
+    "paragraph paragraph"
     "video video"
-    "paragraph paragraph";
+    ;
     gap: 2rem;
 
 }
