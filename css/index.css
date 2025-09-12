@@ -43,7 +43,6 @@ header {
 }
 #logo {
     height: 10rem;
-    position: fixed;
     top: 0;
     left: 2rem;
 }
