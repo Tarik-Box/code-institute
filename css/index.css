@@ -24,6 +24,12 @@ a {
     font-size: 1.2rem;
     letter-spacing: 2px;
 }
+/* H3  */
+h3 {
+    font-weight: lighter;
+    font-family: inherit;
+}
+
 /* Ends of Globals */
 
 /* Main Container */
@@ -65,7 +71,8 @@ header {
 }
 
 #logo {
-    height: 12rem;
+    max-width: 100% ;
+    max-height: 7rem;
 }
 
 .ballalyze {
@@ -82,17 +89,15 @@ header {
 }
 
 /* Navbar */
-.nav-bar ul {
+#nav-links {
     display: flex;
+    gap: 1.5em;
 }
-
-.nav-bar ul li {
-    text-indent: 1.5rem;
-}
-
-
 .nav-bar a:hover {
-    text-shadow: 0 1px 3px #fafafa;
+    text-shadow: -1px -1px 5px #fafafa;
+}
+.active{
+    text-shadow: -1px -1px 2px #fafafa;
 }
 
 /* Main */
@@ -105,13 +110,13 @@ main {
     padding: 2em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 2em;
 }
 
 .player-card {
     justify-self: center;
     box-shadow: 0 1px 1px 1px #b700ff73;
-    padding: 1rem;
+    /* padding: 1em; */
     width: 95%;
 }
 
@@ -124,26 +129,31 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 0.7rem;
-    padding: 0.5rem 0;
+    padding: 1.5rem 0;
     background-image: linear-gradient(to right bottom, #43004911, #4d036311, #39025d11, #24025611, #07004e11);
     border-radius: 3rem;
     font-weight: lighter;
+    letter-spacing: 0;
 }
-
-.player-info h3 {
-    font-weight: lighter;
-    font-family: 'Courier New', Courier, monospace;
+.player-info > h3 {
+    text-transform: uppercase;
 }
-
 .player-info p {
     font-size: 0.8rem;
+    line-height: 10px;
 }
-
+.player-info span {
+    background-color: #8500a0;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
 .player-pic {
-    width: 100px;
-    height: auto;
+    max-width: 100px;
+    max-height: auto;
     border-radius: 10%;
     border: 1px solid #fff;
+    margin: 0.5em 0;
 }
 
 /* Aside */
@@ -152,7 +162,7 @@ aside {
     background-color: rgba(32, 0, 83, 0.26);
     box-shadow: 0 1px 2px 0 #ffffffbf;
     text-align: center;
-    padding: 2em 0;
+    padding: 2em;
 }
 
 aside h3 {
@@ -177,8 +187,8 @@ aside h3 {
 
 .side-stats img {
     padding: 5px;
-    max-width: 5rem;
-    max-height: 6rem;
+    max-width: 100%;
+    max-height: auto;
     border-radius: 5px;
     border-left: 1px solid rgb(164, 0, 247);
 }
@@ -248,11 +258,14 @@ aside h3 {
 }
 
 #player-report-image {
-    height: 20rem;
+    max-width: 100%;
+    max-height: auto;
     border-radius: 3rem;
 }
 
 .report-stats-map {
+    max-width: 100%;
+    max-height: auto;
     grid-area: statmap;
     display: flex;
     align-items: center;

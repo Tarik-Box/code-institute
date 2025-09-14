@@ -48,9 +48,9 @@
           </p>
         </div>
         <!-- Main Navigation Bar "Links" -->
-        <nav class="nav-bar" aria-label="Main Navigation">
-          <ul>
-            <li><a href="#index.html">Home</a></li>
+        <nav class="nav-bar" aria-label="Main Navigation" role="navigation">
+          <ul id="nav-links" class="nav-links" >
+            <li><a href="#index.html" class="active">Home</a></li>
             <li><a href="#cards">Cards</a></li>
             <li><a href="#reports">Reports</a></li>
             <li><a href="#about">About</a></li>
@@ -60,98 +60,98 @@
       </header>
 
       <!-- Main Section -->
-      <main>
+      <main aria-label="Main Content">
         <!-- Cards section to present most rated player ,, still random for now  -->
         <section aria-label="Players Card Section" id="cards">
           <div class="cards-container">
             <!-- player card must be changed by itself , it has to be a varuable not hard coded , also insted of -->
-            <!-- typing player card + number it should be player name aswell the IDs must be dynamics but we'r not 
+            <!-- typing player card + name or randum number it should be player name aswell the IDs must be dynamics but we'r not 
                     in JS , Php or Python yet -->
-            <div class="player-card" aria-labelledby="player-card-1">
+            <div class="player-card">
               <a href="#">
                 <div class="player-info">
-                  <h3 id="player-card-1">Lamine Yamal</h3>
+                  <h3 id="lamine" aria-label="player card : lamine Yamal">Lamine Yamal</h3>
                   <img
                     class="player-pic"
                     src="images/lamine.jpg"
                     alt="Portrait of Lamine Yamal"
                   />
-                  <p>Barcelona</p>
+                  <p><span>Barcelona</span></p>
                   <p>18 Years old</p>
                   <p>Right Winger</p>
                 </div>
               </a>
             </div>
-            <div class="player-card" aria-labelledby="player-card-2">
+            <div class="player-card">
               <a href="#">
                 <div class="player-info">
-                  <h3 id="player-card-2">Mbappe</h3>
+                  <h3 id="mbappe" aria-label="player card : Kelyan Mbappe">Mbappe</h3>
                   <img
                     class="player-pic"
                     src="images/mbsppe.jpg"
                     alt="Portrait of Mbappe"
                   />
-                  <p>Real Madrid</p>
+                  <p><span>Real Madrid</span></p>
                   <p>26 Years old</p>
                   <p>Left Winger</p>
                 </div>
               </a>
             </div>
-            <div class="player-card" aria-labelledby="player-card-3">
+            <div class="player-card">
               <a href="#">
                 <div class="player-info">
-                  <h3 id="player-card-3">Haaland</h3>
+                  <h3 id="halland" aria-label="player card : Erling Halland">Haaland</h3>
                   <img
                     class="player-pic"
                     src="images/halaand.jpg"
                     alt="Portrait of Haaland"
                   />
-                  <p>Man City</p>
+                  <p><span>Man City</span></p>
                   <p>25 Years old</p>
                   <p>Striker</p>
                 </div>
               </a>
             </div>
-            <div class="player-card" aria-labelledby="player-card-4">
+            <div class="player-card">
               <a href="#">
                 <div class="player-info">
-                  <h3 id="player-card-4">Taty Castellanos</h3>
+                  <h3 id="player-card-taty" aria-label="player card  : Taty Castellanos">Taty Castellanos</h3>
                   <img
                     class="player-pic"
                     src="images/taty.jpg"
                     alt="Portrait of Taty Castellanos"
                   />
-                  <p>Lazio</p>
+                  <p><span>Lazio</span></p>
                   <p>26 Years old</p>
                   <p>Striker</p>
                 </div>
               </a>
             </div>
-            <div class="player-card" aria-labelledby="player-card-5">
+            <div class="player-card">
               <a href="#">
                 <div class="player-info">
-                  <h3 id="player-card-5">Ritsu Doan</h3>
+                  <h3 id="player-card-ritsu" aria-label="player card  : Ritsu Doan">Ritsu Doan</h3>
                   <img
                     class="player-pic"
                     src="images/doan.jpg"
                     alt="Portrait of Ritsu Doan"
                   />
-                  <p>Frankfurt</p>
+                  <p><span>Frankfurt</span></p>
                   <p>27 Years old</p>
                   <p>Right Winger</p>
                 </div>
               </a>
             </div>
-            <div class="player-card" aria-labelledby="player-card-6">
+            <div class="player-card">
               <a href="#">
                 <div class="player-info">
-                  <h3 id="player-card-6">Harry Kane</h3>
+                  <h3 id="player-card-kean" aria-label="Player Card : Harry Kean">Harry Kane</h3>
                   <img
                     class="player-pic"
                     src="images/kean.jpg"
                     alt="Portrait of Harry Kane"
                   />
-                  <p>Bayern Munich</p>
+                  <p><span>Bayern Munich</span></p>
                   <p>32 Years old</p>
                   <p>Striker</p>
                 </div>
