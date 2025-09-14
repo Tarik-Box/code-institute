@@ -1,11 +1,10 @@
-﻿
-# Ballalyze ⚽📊
+﻿# Ballalyze ⚽📊
 
 Ballalyze is a simple football data analytics demo project built with **HTML** and **CSS**.
 The goal of this project is to practice semantic HTML structure, accessibility features (ARIA roles, labels), and modern layout techniques using **CSS Grid** and **Flexbox**.
 
 Visit : https://tarik-box.github.io/code-institute/
----
+---------------------------------------------------
 
 ## 🚀 Features
 
